@@ -1,6 +1,7 @@
 :root {
     --accentColor: #3e3e3e;
     --font: 'Montserrat', sans-serif;
+    --font2: 'Source Sans Pro', sans-serif;
 }
 
 body {
@@ -16,10 +17,10 @@ body {
 }
 
 #userPhoto {
-    width: 150px;
+    width: 210px;
     height: 150px;
     display: block;
-    margin: 35px auto 20px;
+    margin: 10px auto 20px;
 }
 
 #title {
@@ -27,7 +28,7 @@ body {
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.25;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     display: block;
     font-family: var(--font);
     width: auto;
@@ -47,23 +48,6 @@ body {
     color:#fed136;
 }
 
-@media only screen and (max-width: 500px) {
- 
- 
-    
-    #title{
-        margin: 0;
-        font-size: 1.5rem;
-    }
-    #links {
-        
-        width: 85% !important;
-        margin: 27px auto;
-    }
-    #name{
-        font-size: 2rem;
-    }
-}
 
 
 #links {
@@ -80,14 +64,14 @@ body {
     align-items: center;
     background-color: #fed136;
     color: var(--accentColor);
-    font-family: var(--font);
+    font-family: var(--font2);
     font-weight: 500;
     border-radius: 40px;
     text-align: center;
     margin-bottom: 20px;
     padding: 17px;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     transition: all .5s;
 }
 
@@ -114,7 +98,7 @@ body {
     background-color: #3e3e3e;
     color: #ffffff;
     box-shadow: 0 0 31px rgba(0, 0, 0, 0.247);
-    font-weight: 100;
+    font-weight: 200;
     transition: .5s;
 }
 
@@ -147,4 +131,30 @@ body {
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
     -webkit-transform: scale(1.02);
     transform: scale(1.02);
+}
+
+@media only screen and (max-width: 500px) {
+    
+    #title{
+        margin: 0;
+        margin-bottom: 15px;
+        font-size: 1.55rem;
+    }
+    #links {
+        
+        width: 85% !important;
+        margin: 27px auto;
+    }
+    #name{
+        font-size: 2rem;
+    }
+    .link{
+        font-size: 1.4rem;
+    }
+    #userPhoto{
+        width: 140px;
+    height: 100px;
+    display: block;
+    margin: 10px auto 20px;
+    }
 }
